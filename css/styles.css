@@ -32,7 +32,7 @@ h3 {
 
 .btn {
   padding: 1rem 2.5rem;
-  margin: .2rem;
+  margin: 0.2rem;
   font-size: 2rem;
   border: 0;
   border-radius: 5px;
@@ -59,11 +59,15 @@ h3 {
 .btn--accent:hover {
   background: rgba(57, 99, 224, 0.9);
 }
-.btn--red{
+.btn--red {
   background-color: rgb(247, 61, 61);
 }
-.btn--red:hover{
-  background-color: rgba(247, 61, 61,.5);
+.btn--red:hover {
+  background-color: rgba(247, 61, 61, 0.5);
+}
+
+.btn--large {
+  padding: 1.2rem 2.5rem;
 }
 /* container */
 
@@ -72,8 +76,34 @@ h3 {
   height: 100%;
   max-width: 340px;
   max-height: 480px;
-  padding: .4rem;
+  padding: 0.4rem;
   background: rgba(219, 216, 216, 0.273);
   border: 1px solid rgba(0, 0, 0, 0.4);
   border-radius: 10px;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.result {
+  padding: 1rem;
+  border-radius: 5px;
+  color: var(--color-secondary);
+  text-align: right;
+  background: #333;
+  grid-column: 1/5;
+}
+
+.result__text {
+  font-weight: 600;
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+
+.btn__equals {
+  grid-row: 3/7;
+  grid-column: 4;
 }
