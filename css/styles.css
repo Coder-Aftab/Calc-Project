@@ -89,6 +89,7 @@ h3 {
   grid-template-columns: repeat(4, 1fr);
 }
 .result {
+  overflow-X: auto;
   padding: 1rem;
   border-radius: 5px;
   color: var(--color-secondary);
@@ -97,7 +98,11 @@ h3 {
   grid-column: 1/5;
 }
 
+/* Result */
+
+
 .result__text {
+  text-overflow: ellipsis;
   font-weight: 600;
   font-size: 4rem;
   margin: 1rem 0;
@@ -107,3 +112,4 @@ h3 {
   grid-row: 3/7;
   grid-column: 4;
 }
+
